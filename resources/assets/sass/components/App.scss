@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+  max-width: 700px;
+  margin: 100px auto;
+  border: 1px solid #2e2e2e;
+  border-radius: 3px;
+  padding: 15px;
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+.Dialogs {
+  float: left;
+  width: 50%;
+}
+
+.DialogWindow {
+  float: right;
+  width: 50%;
+}
+
+.DialogList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  .Message {
+    background-color: #2e2e2e;
+    font-size: 0;
+    text-align: left;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid #7f7f7f;
+  }
+}
+
+.MessageList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  .Message {
+    background-color: #F0F0F0;
+    font-size: 0;
+    text-align: right;
+    padding: 10px;
+    min-width: 200px;
+    border-bottom: 1px solid #c8c8c8;
+    > {
+      .Message_author {
+        color: #2e2e2e;
+      }
+      .Message_text {
+        color: #3e3e3e;
+      }
+      .Message_date {
+        color: #a2a2a2;
+      }
+    }
+  }
+}
+
+.Message > {
+  * {
+    margin: 0;
+  }
+  .Message_author {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .Message_text {
+    font-size: 13px;
+    color: #F0F0F0;
+  }
+  .Message_date {
+    font-size: 10px;
+    font-weight: 300;
+    color: #a2a2a2;
+  }
+}

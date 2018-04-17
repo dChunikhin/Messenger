@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+
+.Invitation {
+  margin: 25vh auto 0;
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    color: #2e2e2e;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 400;
+    color: firebrick;
+  }
+}
